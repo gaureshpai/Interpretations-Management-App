@@ -19,15 +19,9 @@
     border: 10px inset rgb(8, 8, 6);
   }
 .w3-image{
-    left: 20px;
-    right: 10px;
-    top: 10px;
-    bottom: 10px;
     align-items:center;
     
 }
 .w3-col{
     border: 10px;
-    margin-left: 20%;
-    margin-right: 20%;
 }
