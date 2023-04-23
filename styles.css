@@ -19,11 +19,14 @@
     border: 10px inset rgb(8, 8, 6);
   }
 .w3-image{
-    align-items:center;
-        margin-top: 20px;
-    margin-bottom: 20px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 .w3-col{
     border: 10px;
+}
+.centre{
+    align-content: center;
 }
