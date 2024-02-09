@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Interpretations Management App
 
-## Getting Started
+This web application allows users to manage interpretations, providing a platform to view, edit, and delete interpretations stored in the database. It utilizes Next.js for the frontend and AppWriter as the backend service.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **View Interpretations:** Users can view a list of interpretations fetched from the backend.
+- **Edit Interpretations:** Users can navigate to edit interpretation pages for making changes.
+- **Delete Interpretations:** Users can delete interpretations directly from the list.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend:** Next.js, React
+- **Backend:** AppWriter
+- **Styling:** Tailwind CSS
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation and Setup
 
-## Learn More
+1. Clone the repository:
 
-To learn more about Next.js, take a look at the following resources:
+   ```
+   git clone https://github.com/your-username/interpretations-app.git
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```
+   cd interpretations-app
+   npm install
+   ```
 
-## Deploy on Vercel
+3. Configure AppWriter backend:
+   - Set up your AppWriter account and configure the backend endpoints.
+   - Replace the endpoint URLs in the code with your AppWriter backend URLs.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Run the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
+
+## Backend API Endpoints
+
+- **GET /api/interpretations:** Fetches all interpretations.
+- **DELETE /api/interpretations/:id:** Deletes an interpretation by ID.
+
+## Screenshots
+
+![Interpretations List](/screenshots/interpretations-list.png)
+*Screenshot of the interpretations list page.*
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributors
+
+- John Doe (@john-doe)
+- Jane Smith (@jane-smith)
+
+## Acknowledgments
+
+- Thanks to AppWriter for providing the backend service.
+- This project was inspired by [XYZ Project](https://github.com/xyz-project).
+
+Feel free to contribute to the project by submitting issues or pull requests. Happy interpreting!
