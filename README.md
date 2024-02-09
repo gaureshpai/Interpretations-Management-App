@@ -19,7 +19,7 @@ This web application allows users to manage interpretations, providing a platfor
 1. **Clone the repository:**
 
    ```
-   git clone https://github.com/your-username/Interpretations-Management-App.git
+   git clone https://github.com/gaureshpai/Interpretations-Management-App.git
    ```
 
 2. **Install dependencies:**
