@@ -48,8 +48,8 @@ export default function CreatePage(){
     }
 
  return(
-    <div>
-        <h2 className="text-2xl font-bold my-8">Add new Interpretation</h2>
+     <div className="bg-gradient-to-r">
+         <h2 className="text-xl font-semibold my-6">Add New Interpretation</h2>
 
         <form  onSubmit={handleSubmit} className="flex gap-3 flex-col">
             <input 
