@@ -1,6 +1,6 @@
 export default function CreatePage() {
     return (
-        <div>
+        <div className="min-h-screen">
             <h2 className="text-2xl font-bold my-8">Add new Interpretation</h2>
 
             <form className="flex gap-3 flex-col">

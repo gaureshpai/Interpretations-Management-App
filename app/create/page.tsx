@@ -1,7 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { ChangeEvent, useReducer, useState } from "react"
-import Router from "next/router";
+
 export default function CreatePage(){
     const [formData, setFormData] = useState({ term: "", interpretation: "" });
     const [isLoading, setIsLoading] = useState(false);
@@ -48,9 +48,8 @@ export default function CreatePage(){
     }
 
  return(
-     <div className="bg-gradient-to-r">
+     <div className="bg-gradient-to-r min-h-screen">
          <h2 className="text-xl font-semibold my-6">Add New Interpretation</h2>
-
         <form  onSubmit={handleSubmit} className="flex gap-3 flex-col">
             <input 
             type="text" 
@@ -76,7 +75,6 @@ export default function CreatePage(){
                 </button>
         </form> 
             {error && <p className="text-red-500 mt-4">{error}</p>}
-
     </div>
     )
 }

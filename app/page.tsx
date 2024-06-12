@@ -1,5 +1,6 @@
 "use client";
 
+import LoadingScreen from "@/components/LoadingScreen";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -47,11 +48,11 @@ export default function Home() {
     <div>
       {error && <p className="py-4 text-red-500">{error}</p>}
       {isLoading ? (
-        <p>Loading Interpretations</p>
+        <LoadingScreen/>
       ) : interpretations.length > 0 ? (
         <div>
           {interpretations.map((interpretation) => (
-            <div key={interpretation.$id} className="p-4 my-2 rounded-md border-b leading-8">
+            <div key={interpretation.$id} className="p-4 my-2 rounded-md border-b leading-8 bg-slate-200 shadow-slate-800">
               <div className="font-bold">{interpretation.term}</div>
               <div>{interpretation.interpretation}</div>
               <div className="flex gap-4 mt-4 justify-end">

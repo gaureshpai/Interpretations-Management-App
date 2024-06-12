@@ -2,6 +2,7 @@ import type { Metadata} from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from 'next/link';
+import Footer from "@/components/Foooter";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -29,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
         <html lang="en">
-      <body className="font-sans bg-gray-100">
+      <body className="font-['Indie_Flower'] bg-gray-100">
         <div className="mx-auto max-w-8xl">
           <header className="bg-gradient-to-r from-blue-500 to-blue-700 py-4 rounded-b-lg">
             <div className="flex justify-between items-center px-4">
@@ -53,6 +54,7 @@ export default function RootLayout({
           </header>
           <main className="p-4 text-lg">{children}</main>
         </div>
+        <Footer/>
       </body>
     </html>
   );
